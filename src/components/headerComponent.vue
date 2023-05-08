@@ -20,7 +20,6 @@ export default {
 <style>
 .header {
     min-height: 300px;
-    background: url('../assets/bg-desktop-dark.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
