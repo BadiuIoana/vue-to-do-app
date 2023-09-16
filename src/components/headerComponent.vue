@@ -19,7 +19,7 @@ export default {
 
 <style>
 .header {
-    min-height: 300px;
+    min-height: 200px;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -47,15 +47,24 @@ export default {
 }
 
 #app .top-image {
-    position: fixed;
+    position: absolute;
     inset: 0 0 auto 0;
     width: 100%;
     height: fit-content;
+    max-height: 280px;
 }
 
 @media(max-width:768px) {
     .header .title-wrapper h1 {
         font-size: 28px;
     }
+
+    .header {
+        min-height: 180px;
+    }
+    #app .top-image {
+        min-height: 200px;
+    }
+
 }
 </style>

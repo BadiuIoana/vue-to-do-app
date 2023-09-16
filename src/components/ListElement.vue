@@ -105,8 +105,16 @@ input[type="checkbox"]:disabled {
     transform: opacity 100ms ease-in;
 }
 
-.is-checked {
+label[for="task-completed"] {
+    opacity: 1;
+    transition: opacity ease-in 1s;
+    max-width: 350px;
+    word-wrap: break-word;
+}
+
+label[for="task-completed"].is-checked {
     text-decoration: line-through;
+    opacity: 0.5;
 }
 
 @media(max-width: 768px) {

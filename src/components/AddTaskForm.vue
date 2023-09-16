@@ -1,8 +1,8 @@
 <template>
     <form id="add-task" :class="['add-task', theme]" @submit="onSubmit">
         <input type="checkbox" name="task-completed" v-model="isChecked">
-        <input type="text" name="description" v-model="description" placeholder="Task description">
-        <button class="submit">Add new task</button>
+        <input type="text" name="description" v-model="description" placeholder="Create a new todo...">
+        <!-- <button class="submit">+</button> -->
     </form>
 </template>
 
@@ -33,37 +33,25 @@ export default {
 };
 </script>
 <style>
-.add-task input[type='text'] {
-    padding: 0.5rem;
-    margin: 1rem;
-    border: none;
-    border-radius: 0.4rem;
-}
-
 .add-task {
     display: flex;
     align-items: center;
-    margin-left: 1rem;
+    z-index: 10;
 }
 
-.add-task button {
-    border-radius: 0.5rem;
-    padding: 0.4rem 1rem;
-    font-weight: 600;
-    background: transparent;
+.add-task input[type='text'] {
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    flex-grow: 1;
+    margin: 1rem;
+    outline: none;
+    font-size: 18px;
+    font-family:'Josefin Sans', sans-serif;
+    background:transparent;
+    border: none;
 }
 
-.add-task.dark button{
-    border: 1px solid #fff;
-    color: #fff;
+.add-task.dark  input[type='text'] {
+    color:#ffffff;
 }
 
-.add-task.light button {
-    border: 1px solid #0a2e44;
-    color: #0a2e44;
-}
-
-.add-task.add-task.light input[type='text'] {
-   border: 1px solid #0a2e44;
-}
 </style>
