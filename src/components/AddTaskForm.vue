@@ -54,4 +54,19 @@ export default {
     color:#ffffff;
 }
 
+.add-task.dark input:-webkit-autofill,
+.add-task.dark input:-webkit-autofill:hover, 
+.add-task.dark input:-webkit-autofill:focus, 
+.add-task.dark input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #0a2e44 inset !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+.add-task.light input:-webkit-autofill,
+.add-task.light input:-webkit-autofill:hover, 
+.add-task.light input:-webkit-autofill:focus, 
+.add-task.light input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #ffffff inset !important;
+}
+
 </style>

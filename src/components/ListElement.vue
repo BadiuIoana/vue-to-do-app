@@ -36,7 +36,7 @@ export default {
 }
 
 .element .group {
-    padding: 1rem;
+    padding: 0 1rem;
     text-align: left;
     display: flex;
     align-items: center;
@@ -51,12 +51,10 @@ input[type="checkbox"] {
     appearance: none;
     font: inherit;
     color: currentColor;
-    width: 1.5em;
-    height: 1.5em;
     border: 0.15em solid currentColor;
     border-radius: 50%;
     transform: translateY(-0.075em);
-
+    padding:0.3rem ;
     display: grid;
     place-content: center;
 }
@@ -123,6 +121,10 @@ label[for="task-completed"].is-checked {
     }
     .element .delete {
         opacity: 1;
+    }
+
+    label[for="task-completed"] {
+        max-width: 200px;
     }
 }
 </style>

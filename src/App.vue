@@ -1,14 +1,7 @@
 <template>
-  <div v-if="theme === 'dark'" class="dark">
-    <img alt="" class="top-image" src="./assets/bg-desktop-dark.jpg">
-    <header-component :theme="this.theme" @switch-theme="siwtchTheme"></header-component>
-    <task-panel :theme="this.theme"></task-panel>
-  </div>
-  <div v-else class="light">
-    <img alt="" class="top-image" src="./assets/bg-desktop-light.jpg">
-    <header-component :theme="this.theme" @switch-theme="siwtchTheme"></header-component>
-    <task-panel :theme="this.theme"></task-panel>
-  </div> 
+  <img class="top-image" src="./assets/bg-desktop-dark.jpg" alt="">
+  <header-component :theme="this.theme" @switch-theme="siwtchTheme"></header-component>
+  <task-panel :theme="this.theme"></task-panel>
 </template>
 
 <script>
